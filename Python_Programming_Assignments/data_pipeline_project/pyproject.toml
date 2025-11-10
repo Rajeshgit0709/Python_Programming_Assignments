@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-processing-integration-pipeline"
+version = "0.1.0"
+description = "Complete data processing pipeline: CSV -> MariaDB -> MongoDB + full-text search"
+requires-python = ">=3.10"
+dependencies = [
+    "SQLAlchemy>=2.0.0",
+    "PyMySQL>=1.1.0",
+    "mongoengine>=0.27.0",
+    "pypdf>=4.0.0",
+    "python-dotenv>=1.0.1",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["D"]  # keep docstrings lenient
+
+[tool.ruff.lint.per-file-ignores]
+"main.py" = ["T201"]  # allow print
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_ignores = true
+warn_return_any = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+strict_optional = true
+check_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.setuptools]
+packages = ["models", "storage", "usecases"]

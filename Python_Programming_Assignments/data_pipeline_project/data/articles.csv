@@ -1,0 +1,4 @@
+title,summary,file_path,arxiv_id,author_full_name,author_title
+"Attention Is All You Need","The Transformer introduces self-attention for sequence modeling.","papers/attention.pdf","arXiv:1706.03762","Ashish Vaswani","Research Scientist"
+"Deep Residual Learning for Image Recognition","ResNets ease training of very deep networks via residual connections.","papers/resnet.pdf","arXiv:1512.03385","Kaiming He","Research Scientist"
+"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding","BERT uses bidirectional pretraining for language understanding tasks.","papers/bert.pdf","arXiv:1810.04805","Jacob Devlin","Research Scientist"
