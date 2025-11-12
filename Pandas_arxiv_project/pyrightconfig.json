@@ -1,0 +1,10 @@
+{
+  "include": ["**/*.py"],
+  "ignore": ["**/tests/**"],
+  "executionEnvironments": [
+    {
+      "root": "./",
+      "extraPaths": ["./"]
+    }
+  ]
+}
